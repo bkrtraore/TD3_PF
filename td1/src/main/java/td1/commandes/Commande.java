@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 import td1.paires.Paire;
 
@@ -24,7 +25,7 @@ public class Commande {
         return lignes;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append("Commande\n");
@@ -33,6 +34,7 @@ public class Commande {
         }
         return str.toString();
     }
+    */
 
     /**
      * cumule les lignes en fonction des produits
@@ -82,6 +84,32 @@ public class Commande {
         str.append(HLINE);
         str.append(String.format("Total : %10.2f", c.cout(calculLigne)));
         return str.toString();
+    }
+
+    /*
+    default <V> Function<V, R> compose(Function<? super V, ? extends T> before) {
+        Objects.requireNonNull(before);
+        return (V v) -> apply(before.apply(v));
+    }*/
+
+    public Function<Paire<Produit, Integer>, String> formatteurLigne = ligne -> String.format("%s x%d\n", ligne.fst(), ligne.snd());
+
+    /*
+    public String formatteurLigne(String ){
+        String rtr = "";
+        for (Paire<Produit,Integer> l : lignes
+             ) {
+            rtr+=l.fst().toString()+"\n";
+        }
+        return rtr;
+    }*/
+
+
+    // réécrire la méthode toString en utilisant formatteurLigne, map et collect
+    @Override
+    public String toString() {
+        return lignes().stream().map(formatteurLigne).collect(Collectors.joining("\n"));
+
     }
 
 }
