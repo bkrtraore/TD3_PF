@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="532px" preserveAspectRatio="none" style="width:770px;height:532px;" version="1.1" viewBox="0 0 770 532" width="770px" zoomAndPan="magnify"><defs/><g><!--MD5=[54ccfe9671f3009736d966c289137bfc]
+cluster td2.universite--><polygon fill="#FFFFFF" points="22,24,138,24,145,46.2969,748,46.2969,748,520,22,520,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="145" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="110" x="26" y="38.9951">td2.universite</text><!--MD5=[d5e749ab7314d8c065073d76a4bf7b2d]
+class Matiere--><rect fill="#F8F8FF" height="124.8281" id="Matiere" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="171" x="38.5" y="334.5"/><ellipse cx="96.25" cy="350.5" fill="#6495ED" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M99.2188,356.1406 Q98.6406,356.4375 98,356.5781 Q97.3594,356.7344 96.6563,356.7344 Q94.1563,356.7344 92.8281,355.0938 Q91.5156,353.4375 91.5156,350.3125 Q91.5156,347.1875 92.8281,345.5313 Q94.1563,343.875 96.6563,343.875 Q97.3594,343.875 98,344.0313 Q98.6563,344.1875 99.2188,344.4844 L99.2188,347.2031 Q98.5938,346.625 98,346.3594 Q97.4063,346.0781 96.7813,346.0781 Q95.4375,346.0781 94.75,347.1563 Q94.0625,348.2188 94.0625,350.3125 Q94.0625,352.4063 94.75,353.4844 Q95.4375,354.5469 96.7813,354.5469 Q97.4063,354.5469 98,354.2813 Q98.5938,354 99.2188,353.4219 L99.2188,356.1406 Z "/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="116.75" y="354.6543">Matiere</text><line style="stroke: #000000; stroke-width: 1.5;" x1="39.5" x2="208.5" y1="366.5" y2="366.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46.5" y="374.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="58.5" y="380.7104">nom: string</text><line style="stroke: #000000; stroke-width: 1.5;" x1="39.5" x2="208.5" y1="387.3047" y2="387.3047"/><ellipse cx="49.5" cy="398.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145" x="58.5" y="401.5151">this(nom: string): Matiere</text><ellipse cx="49.5" cy="411.1094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="58.5" y="414.3198">nom(): string</text><ellipse cx="49.5" cy="423.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="58.5" y="427.1245">equals(o: Object): bool</text><ellipse cx="49.5" cy="436.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="58.5" y="439.9292">hashCode(): int</text><ellipse cx="49.5" cy="449.5234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="58.5" y="452.7339">toString(): string</text><!--MD5=[17204cc6642bbfde522522eb96ac5eb2]
+class UE--><rect fill="#F8F8FF" height="137.6328" id="UE" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="315" x="38.5" y="59"/><ellipse cx="183.25" cy="75" fill="#6495ED" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M186.2188,80.6406 Q185.6406,80.9375 185,81.0781 Q184.3594,81.2344 183.6563,81.2344 Q181.1563,81.2344 179.8281,79.5938 Q178.5156,77.9375 178.5156,74.8125 Q178.5156,71.6875 179.8281,70.0313 Q181.1563,68.375 183.6563,68.375 Q184.3594,68.375 185,68.5313 Q185.6563,68.6875 186.2188,68.9844 L186.2188,71.7031 Q185.5938,71.125 185,70.8594 Q184.4063,70.5781 183.7813,70.5781 Q182.4375,70.5781 181.75,71.6563 Q181.0625,72.7188 181.0625,74.8125 Q181.0625,76.9063 181.75,77.9844 Q182.4375,79.0469 183.7813,79.0469 Q184.4063,79.0469 185,78.7813 Q185.5938,78.5 186.2188,77.9219 L186.2188,80.6406 Z "/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="17" x="203.75" y="79.1543">UE</text><line style="stroke: #000000; stroke-width: 1.5;" x1="39.5" x2="352.5" y1="91" y2="91"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46.5" y="99"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="58.5" y="105.2104">nom: string</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46.5" y="111.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="163" x="58.5" y="118.0151">ects: Map&lt;Matiere, Integer&gt;</text><line style="stroke: #000000; stroke-width: 1.5;" x1="39.5" x2="352.5" y1="124.6094" y2="124.6094"/><ellipse cx="49.5" cy="135.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="289" x="58.5" y="138.8198">this(nom: string, ects: Map&lt;Matiere, Integer&gt;): UE</text><ellipse cx="49.5" cy="148.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="58.5" y="151.6245">nom() string</text><ellipse cx="49.5" cy="161.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171" x="58.5" y="164.4292">ects(): Map&lt;Matiere, Integer&gt;</text><ellipse cx="49.5" cy="174.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="58.5" y="177.2339">equals(o: Object): bool</text><ellipse cx="49.5" cy="186.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="58.5" y="190.0386">hashCode(): int</text><!--MD5=[5666f6e92f00d6540928055eb69e0983]
+class Annee--><rect fill="#F8F8FF" height="91.2188" id="Annee" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="179" x="468.5" y="82.5"/><ellipse cx="533.75" cy="98.5" fill="#6495ED" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M536.7188,104.1406 Q536.1406,104.4375 535.5,104.5781 Q534.8594,104.7344 534.1563,104.7344 Q531.6563,104.7344 530.3281,103.0938 Q529.0156,101.4375 529.0156,98.3125 Q529.0156,95.1875 530.3281,93.5313 Q531.6563,91.875 534.1563,91.875 Q534.8594,91.875 535.5,92.0313 Q536.1563,92.1875 536.7188,92.4844 L536.7188,95.2031 Q536.0938,94.625 535.5,94.3594 Q534.9063,94.0781 534.2813,94.0781 Q532.9375,94.0781 532.25,95.1563 Q531.5625,96.2188 531.5625,98.3125 Q531.5625,100.4063 532.25,101.4844 Q532.9375,102.5469 534.2813,102.5469 Q534.9063,102.5469 535.5,102.2813 Q536.0938,102 536.7188,101.4219 L536.7188,104.1406 Z "/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40" x="554.25" y="102.6543">Annee</text><line style="stroke: #000000; stroke-width: 1.5;" x1="469.5" x2="646.5" y1="114.5" y2="114.5"/><ellipse cx="479.5" cy="125.5" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="488.5" y="128.7104">this(ues: Set&lt;UE&gt;): Annee</text><ellipse cx="479.5" cy="138.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="488.5" y="141.5151">ues(): Set&lt;UE&gt;</text><ellipse cx="479.5" cy="151.1094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="488.5" y="154.3198">etudiants(): Set&lt;Etudiant&gt;</text><ellipse cx="479.5" cy="163.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="488.5" y="167.1245">inscrire(e: Etudiant): void</text><!--MD5=[f84e857de5a9ca5678aed72e3e98d0a5]
+class Etudiant--><rect fill="#F8F8FF" height="214.4609" id="Etudiant" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="447" x="284.5" y="290"/><ellipse cx="477.25" cy="306" fill="#6495ED" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M480.2188,311.6406 Q479.6406,311.9375 479,312.0781 Q478.3594,312.2344 477.6563,312.2344 Q475.1563,312.2344 473.8281,310.5938 Q472.5156,308.9375 472.5156,305.8125 Q472.5156,302.6875 473.8281,301.0313 Q475.1563,299.375 477.6563,299.375 Q478.3594,299.375 479,299.5313 Q479.6563,299.6875 480.2188,299.9844 L480.2188,302.7031 Q479.5938,302.125 479,301.8594 Q478.4063,301.5781 477.7813,301.5781 Q476.4375,301.5781 475.75,302.6563 Q475.0625,303.7188 475.0625,305.8125 Q475.0625,307.9063 475.75,308.9844 Q476.4375,310.0469 477.7813,310.0469 Q478.4063,310.0469 479,309.7813 Q479.5938,309.5 480.2188,308.9219 L480.2188,311.6406 Z "/><text fill="#6495ED" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="53" x="497.75" y="310.1543">Etudiant</text><line style="stroke: #000000; stroke-width: 1.5;" x1="285.5" x2="730.5" y1="322" y2="322"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="292.5" y="330"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="304.5" y="336.2104">numero: string</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="292.5" y="342.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="304.5" y="349.0151">prenom: string</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="292.5" y="355.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="304.5" y="361.8198">nom: string</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="292.5" y="368.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="304.5" y="374.6245">notes: Map&lt;Matiere, Double&gt;</text><line style="stroke: #000000; stroke-width: 1.5;" x1="285.5" x2="730.5" y1="381.2188" y2="381.2188"/><ellipse cx="295.5" cy="392.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="421" x="304.5" y="395.4292">this(numero: string, prenom: string, nom: string, annee: Annee): Etudiant</text><ellipse cx="295.5" cy="405.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="304.5" y="408.2339">numero(): string</text><ellipse cx="295.5" cy="417.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="304.5" y="421.0386">prenom(): string</text><ellipse cx="295.5" cy="430.6328" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="304.5" y="433.8433">nom(): string</text><ellipse cx="295.5" cy="443.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="304.5" y="446.6479">notes(): Map&lt;Matiere, Double&gt;</text><ellipse cx="295.5" cy="456.2422" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="243" x="304.5" y="459.4526">noter(matiere: Matiere, note: Double): void</text><ellipse cx="295.5" cy="469.0469" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="304.5" y="472.2573">equals(o: Object): bool</text><ellipse cx="295.5" cy="481.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="304.5" y="485.062">hashCode(): int</text><ellipse cx="295.5" cy="494.6563" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="304.5" y="497.8667">toString(): string</text><!--MD5=[79ce80251be01f3aab35bb053787dab3]
+link UE to Matiere--><path d="M177.65,197.07 C166.68,237.75 152.8,289.2 141.91,329.58 " fill="none" id="UE-&gt;Matiere" style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#808080" points="140.6,334.45,146.8022,326.7994,141.8999,329.6219,139.0773,324.7196,140.6,334.45" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[63cf07fb18ff4672adfdba2f6f840f4a]
+link UE to Annee--><path d="M367.11,128 C397.2,128 456.38,128 456.38,128 " fill="none" id="UE-Annee" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="468.38,128,462.38,124,456.38,128,462.38,132,468.38,128" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="353.73,128,362.73,132,358.73,128,362.73,124,353.73,128" style="stroke: #808080; stroke-width: 1.0;"/><line style="stroke: #808080; stroke-width: 1.0;" x1="358.73" x2="366.73" y1="128" y2="128"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="392" y="121.0669">«Set»</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="43" x="361.2913" y="140.3938">- ues *</text><!--MD5=[b2830f790d659f905f0c9c54dd07c2fe]
+link Annee to Etudiant--><path d="M547.4138,185.4836 C547.4138,185.4836 536.19,245.46 530.31,276.84 " fill="none" id="Annee-Etudiant" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="527.9,289.74,533.4934,281.6336,528.8234,284.826,525.631,280.1561,527.9,289.74" style="stroke: #808080; stroke-width: 1.0;"/><line style="stroke: #808080; stroke-width: 1.0;" x1="528.8234" x2="530.29" y1="284.826" y2="276.96"/><polygon fill="#808080" points="549.63,173.69,544.5907,178.848,547.4138,185.4836,552.4531,180.3255,549.63,173.69" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="538" y="248.0669">«Set»</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="446.5495" y="279.0854">- etudiants *</text><!--MD5=[9fe9cc90b885bb188cc999f50a9aefa1]
+link Etudiant to Annee--><path d="M514.6022,277.9788 C514.6022,277.9788 517,235 517,235 C517,235 526.25,211.08 535.96,185.97 " fill="none" id="Etudiant-Annee" style="stroke: #808080; stroke-width: 1.0;"/><polygon fill="#808080" points="540.73,173.65,533.7526,180.601,538.9263,178.3133,541.2139,183.487,540.73,173.65" style="stroke: #808080; stroke-width: 1.0;"/><line style="stroke: #808080; stroke-width: 1.0;" x1="538.9263" x2="536.04" y1="178.3133" y2="185.77"/><polygon fill="#FFFFFF" points="513.93,289.96,518.2598,284.1935,514.6022,277.9788,510.2724,283.7454,513.93,289.96" style="stroke: #808080; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="472.4152" y="193.8489">- annee 1</text><!--MD5=[d8687dc7e5e726b7b11a06bbae450d18]
+reverse link Matiere to Etudiant--><path d="M214.85,397 C235.76,397 252,397 252,397 C252,397 265.78,397 284.3,397 " fill="none" id="Matiere&lt;-Etudiant" style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#808080" points="209.73,397,218.73,401,214.73,397,218.73,393,209.73,397" style="stroke: #808080; stroke-width: 1.0;"/><!--MD5=[b4b25895d410ee0311a80d8ec79c9ebb]
+@startuml
+
+skinparam nodesep 75
+skinparam ranksep 75
+hide empty members
+
+skinparam noteFontSize 10
+skinparam noteFontName Courier
+
+skinparam monochrome  false
+skinparam shadowing   false
+skinparam roundcorner 10
+skinparam linetype polyline
+
+skinparam class {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+    fontColor       CornFlowerBlue
+}
+
+skinparam state {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+    fontColor       CornFlowerBlue
+}
+
+skinparam object {
+    BackgroundColor GhostWhite
+    ArrowColor      Gray
+    BorderColor     Black
+}
+
+skinparam package<<Layout>> {
+  borderColor         Transparent
+  backgroundColor     Transparent
+  fontColor           Transparent
+  stereotypeFontColor Transparent
+}
+
+skinparam sequence {
+	ArrowColor                  Gray
+  LifeLineBorderColor         CornFlowerBlue
+  LifeLineBackgroundColor     GhostWhite
+	ParticipantBorderColor      CornFlowerBlue
+	ParticipantBackgroundColor  GhostWhite
+  ActorBorderColor            CornFlowerBlue
+	ActorBackgroundColor        GhostWhite
+  BoxBorderColor         CornFlowerBlue
+  BoxBackgroundColor         GhostWhite
+}
+
+skinparam stereotypeCBackgroundColor CornflowerBlue
+
+hide footbox
+hide empty members
+
+skinparam note {
+ BackgroundColor GhostWhite
+ BorderColor         CornFlowerBlue
+}
+package td2.universite {
+    class Matiere {
+        - nom: string
+        + this(nom: string): Matiere
+        + nom(): string
+        + equals(o: Object): bool
+        + hashCode(): int
+        + toString(): string
+    }
+
+    class UE {
+        - nom: string
+        - ects: Map<Matiere, Integer>
+        + this(nom: string, ects: Map<Matiere, Integer>): UE
+        + nom() string
+        + ects(): Map<Matiere, Integer>
+        + equals(o: Object): bool
+        + hashCode(): int
+    }
+    UE ..> Matiere
+
+    class Annee {
+        + this(ues: Set<UE>): Annee
+        + ues(): Set<UE>
+        + etudiants(): Set<Etudiant>
+        + inscrire(e: Etudiant): void
+    }
+    Annee o-left> "- ues *" UE: <<Set>>
+    Annee *- -> "- etudiants *" Etudiant: <<Set>>
+
+    class Etudiant {
+        - numero: string
+        - prenom: string
+        - nom: string
+        - notes: Map<Matiere, Double>
+        + this(numero: string, prenom: string, nom: string, annee: Annee): Etudiant
+        + numero(): string
+        + prenom(): string
+        + nom(): string
+        + notes(): Map<Matiere, Double>
+        + noter(matiere: Matiere, note: Double): void
+        + equals(o: Object): bool
+        + hashCode(): int
+        + toString(): string
+    }
+    Etudiant o- -> "- annee 1" Annee
+    Etudiant .left.> Matiere
+}
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 10:24:54 GMT 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_242-b08
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
