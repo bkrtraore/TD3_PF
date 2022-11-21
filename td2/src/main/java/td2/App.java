@@ -3,13 +3,12 @@
  */
 package td2;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.Map.Entry;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import td2.universite.Annee;
 import td2.universite.Etudiant;
@@ -18,6 +17,56 @@ import td2.universite.UE;
 
 public class App {
 
+    // matières d'une année
+    public static final Function<Annee, Stream<Matiere>> matieresA =
+        x -> x.ues().stream().flatMap(e -> e.ects().keySet().stream());
+    // matières d'un étudiant
+    public static final Function<Etudiant, Stream<Matiere>> matieresE =
+        x -> x.notes().keySet().stream();
+    // matières coefficientées d'un étudiant (version Entry)
+    public static final Function<Etudiant, Stream<Entry<Matiere, Integer>>> matieresCoefE_ =
+        x -> x.annee().ues().stream().flatMap(y -> y.ects().entrySet().stream());
+    // transformation d'une Entry en une Paire
+    public static final Function<Entry<Matiere, Integer>, Paire<Matiere, Integer>> entry2paire =
+        x -> new App.Paire<>(x.getKey(), x.getValue());
+    // matières coefficientées d'un étudiant (version Paire)
+    public static final Function<Etudiant, Stream<Paire<Matiere, Integer>>> matieresCoefE =
+        x -> matieresCoefE_.apply(x).map(entry2paire);
+    // accumulateur pour calcul de la moyenne
+// ((asomme, acoefs), (note, coef)) -> (asomme+note*coef, acoef+coef)
+    public static final BinaryOperator<Paire<Double, Integer>> accumulateurMoyenne =
+        (a, b) -> new App.Paire<>(a.fst + b.fst * b.snd, a.snd+ b.snd);
+    // zero (valeur initiale pour l'accumulateur)
+    // public static final Paire<Double, Integer> zero = ???
+    // obtention de la liste de (note, coef) pour les matières d'un étudiant
+// 1. obtenir les (matière, coef)s
+// 2. mapper pour obtenir les (note, coef)s, null pour la note si l'étudiant est DEF dans cette matière
+    // public static final Function<Etudiant, List<Paire<Double, Integer>>> notesPonderees = ???
+    // obtention de la liste de (note, coef) pour les matières d'un étudiant
+// 1. obtenir les (matière, coef)s
+// 2. mapper pour obtenir les (note, coef)s, 0.0 pour la note si l'étudiant est DEF dans cette matière
+    //public static final Function<Etudiant, List<Paire<Double, Integer>>> notesPondereesIndicatives = ???
+// replie avec l'accumulateur spécifique
+    //public static final Function<List<Paire<Double, Integer>>, Paire<Double, Integer>> reduit = ???
+    // calcule la moyenne à partir d'un couple (somme pondérée, somme coefs)
+    // public static final Function<Paire<Double, Integer>, Double> divise = ???
+    // calcul de moyenne fonctionnel
+// composer notesPonderees, reduit et divise
+// exception en cas de matière DEF
+    // public static final Function<Etudiant, Double> computeMoyenne = ???
+    // calcul de moyenne fonctionnel
+// composer notesPondereesIndicatives, reduit et divise
+// pas d'exception en cas de matière DEF
+    /*public static final Function<Etudiant, Double> computeMoyenneIndicative = ???
+    // calcul de moyenne
+    public static final Function<Etudiant, Double> moyenne = e -> (e == null || aDEF
+            .test(e)) ? null
+2
+        : computeMoyenne.apply(e);
+    // calcul de moyenne indicative
+    public static final Function<Etudiant, Double> moyenneIndicative =
+            computeMoyenneIndicative;
+*/
     //
     // QUESTION 1.1
     //
@@ -79,7 +128,28 @@ public class App {
             this.fst = fst;
             this.snd = snd;
         }
-        @Override public String toString() { return String.format("(%s,%s)",fst.toString(),snd.toString()); }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof Paire)) return false;
+
+            Paire<T, U> paire = (Paire<T, U>) o;
+
+            if (!Objects.equals(fst, paire.fst)) return false;
+            return Objects.equals(snd, paire.snd);
+        }
+
+        @Override
+        public int hashCode() {
+            int result = fst != null ? fst.hashCode() : 0;
+            result = 31 * result + (snd != null ? snd.hashCode() : 0);
+            return result;
+        }
+
+        @Override public String toString() { return String.format("(%s,%s)",fst.toString(),snd.toString());
+
+        }
     }
 
     public static <T> Predicate<T> conjonction(List<Predicate<T>> conditions) {
