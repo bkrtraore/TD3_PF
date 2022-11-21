@@ -170,8 +170,14 @@ public class App {
     }
 
     public static void main(final String[] args) {
-        exercice2();
+       /* exercice2();
         exercice3();
         exercice4();
+
+        */
+        DAO data = DAO.instance();
+        System.out.println(data.commandes().toString());
+
+
     }
 }
